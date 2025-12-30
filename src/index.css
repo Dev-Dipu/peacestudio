@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: dmsans;
+    src: url("/fonts/dmsans.ttf");
+}
+
+@font-face {
+    font-family: eight;
+    src: url("/fonts/eightlight.OTF");
+}
+
+@keyframes blurRevealFade {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(28px);
+  }
+
+  18% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+  }
+
+  55% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+  }
+
+  75% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(-28px);
+  }
+
+  100% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(-28px);
+  }
+}
+
+
+
+
+.animate-blur-sync {
+  animation: blurRevealFade 7s cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  will-change: opacity, transform, filter;
+}
+
