@@ -29,7 +29,7 @@ const App = () => {
                     )}
                 </ul>
                 <button className="bg-white text-lg rounded-[14px] px-4.5 py-2.5 text-black cursor-pointer" onClick={handlePlayPause}>
-                    Start a Conversation
+                    Experience This
                 </button>
             </div>
             {/* Middle Section - Services */}
